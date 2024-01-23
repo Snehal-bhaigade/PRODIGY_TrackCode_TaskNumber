@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.container{
+    max-width:80vw;
+}
+.navbar{
+    display: flex;
+    height: 67px;
+    cursor: pointer;
+    font-family: 'Ubuntu' , sans-serif;
+}
+.navbar :hover,
+navbar :active{
+    color: blue;
+}
+.section{
+    min-height: 100vh;
+    display: flex;
+    justify-content:center ;
+    align-items:center ;
+    background-color: black;
+}
+
+.navbar li{
+    list-style: none;
+    margin: 0 12px;
+}
+
+.topleft{
+     width: 100%;
+     height:50vh;
+     
+}
+
+.topright{
+    width: 50%;
+    height: 50vh;
+}
+
+.section1{
+    min-height: 100vh;
+}
+
+.logo{
+    font-size: 1.3rem;
+}
+.section2{
+    padding:73px;
+}
+.section2 h1{
+    font-size: 2.3rem;
+}
+
+.box h2{
+    font-size: 2rem;
+    padding: 12px 0;
+}
+.highlighted{
+    font-size: 1.2 rem;
+    font-weight: bolder;
+}
+.section2 p{
+    padding: 0 50vw;
+    text-align: center;
+}
+
+.box{
+    padding: 8px 0;
+    margin: 12px 22px;
+    min-width: 20vw;
+    border: 2px solid black;
+    border-radius: 8px;
+    text-align: center;
+}
+.box ul{
+    list-style-type: none;
+}
+.box ul li{
+    margin: 12px 2px;
+}
+.plantable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section3 table{
+    width: 100%;
+    margin-bottom: 140px;
+    margin-top: 20px;
+    
+    border-collapse: collapse;
+
+}
+.section3 table th{
+    width: 23vw;
+    border-bottom: 2px solid black;
+    padding: 15px 0;
+}
+.section3 table td{
+    border-bottom: 2px solid black;
+    
+}
+
+
+
+.section3 h1{
+    font-size: 2.3rem;
+}
+.section3{
+    padding-left: 63px;
+    padding-right: 63px;
+}
+.foot{
+    padding: 23px;
+    margin-top: 450px;
+    font-size: 12px;
+    
+}
+
+.countdown{
+    color: blue;
+    font-size: 36px;
+    font-weight: 400;
+
+
+
+    @include breakpoint(480px){
+        font-size:42px;
+    }
+    @include breakpoint(768px){
+        font-size: 56px;
+    }
+}
+
+.Coming{
+    text-align: center;
+    font-size: 32px;
+    padding: 63px;
+}
+
+.overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    background: black;
+    width:100%;
+    height: 100%;
+    z-index: -1;
+
+}
+.countdown-container{
+    display:flex;
+    text-align: center
+    padding: 20px;
+    
+
+}
+.big-text{
+    font-size: 4rem;
+}
+.title{
+    margin: 10px;
+    text-align: center;
+    color: black;
+    width:100%;
+    letter-spacing:2px;
+    font-size: 3rem;
+    line-height: 5.5rem;
+}
+.countdown-container >div{
+    margin:0 2rem;
+    text-align: center;
+    border:2px solid black;
+    padding:0px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    color:black;
+    min-width: 150px;
+}
+.l-s{
+    padding: 15px;
+}
+
